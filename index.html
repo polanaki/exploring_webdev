@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <h1> My Portfolio</h1>
+                <ul>
+                    <li>
+                        <a href="#home"> Home</a>
+
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home" style="text-align:center; padding: 50px 20px;">
+ <h2>Welcome to My Portfolio </h2>
+ <p> Your gateway to exploring my journey and projects.</p>
+ <button style=" padding: 10px 20px; background-color: aquamarine; color: rgb(160, 132, 95); cursor: pointer; border: none;font-size:1em ;">Learn More</button>
+        </section>
+
+        <section id="about" style="padding: 50px 20px; background-color: #f4f4f4; text-align: center;">
+            <h2>About Me</h2>
+            <p>
+                Hi! I’m an aspiring web developer with a passion for creating functional and visually appealing websites. 
+                I specialize in front-end development, focusing on HTML, CSS, and JavaScript to bring designs to life.
+            </p>
+            <p>
+                My goal is to continuously learn and grow, developing innovative solutions that enhance user experiences.
+            </p>
+        </section>
+        
+        <section id="services" style="padding: 50px 20px; text-align: center;">
+            <h2>My Services</h2>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+                <div style="width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #fff;">
+                    <h3>Web Design</h3>
+                    <p>Creating visually appealing and user-friendly website designs tailored to your needs.</p>
+                </div>
+                <div style="width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #fff;">
+                    <h3>Development</h3>
+                    <p>Building responsive and functional websites with clean and efficient code.</p>
+                </div>
+                <div style="width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #fff;">
+                    <h3>SEO Optimization</h3>
+                    <p>Enhancing website visibility and search engine rankings for better reach.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" style="padding: 50px 20px; background-color: #f9f9f9; text-align: center;">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out using this comprehensive form!</p>
+            <form action="#" method="POST" style="max-width: 600px; margin: 0 auto; text-align: left;">
+        
+                <!-- Name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+        
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+        
+                <!-- Phone Number -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="\d{10}" maxlength="10" placeholder="10-digit phone number" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+        
+                <!-- Gender (Radio Buttons) -->
+                <fieldset style="margin-bottom: 10px;">
+                    <legend>Gender:</legend>
+                    <label><input type="radio" name="gender" value="male" required> Male</label><br>
+                    <label><input type="radio" name="gender" value="female"> Female</label><br>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </fieldset>
+        
+                <!-- Hobbies (Checkboxes) -->
+                <fieldset style="margin-bottom: 10px;">
+                    <legend>Hobbies:</legend>
+                    <label><input type="checkbox" name="hobby" value="reading"> Reading</label><br>
+                    <label><input type="checkbox" name="hobby" value="traveling"> Traveling</label><br>
+                    <label><input type="checkbox" name="hobby" value="sports"> Sports</label>
+                </fieldset>
+        
+                <!-- Preferred Contact Method (Dropdown) -->
+                <label for="contact-method">Preferred Contact Method:</label>
+                <select id="contact-method" name="contact-method" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="text">Text Message</option>
+                </select>
+        
+                <!-- Upload File -->
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" style="margin-bottom: 10px;">
+        
+                <!-- Message -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" style="width: 100%; padding: 10px; margin-bottom: 10px;" required></textarea>
+        
+                <!-- Submit Button -->
+                <button type="submit" style="padding: 10px 20px; background-color: #333; color: white; border: none; cursor: pointer;">Send Message</button>
+            </form>
+        </section>
+        
+      <script src="script.js"></script>  
+    </body>
+</html>
